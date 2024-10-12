@@ -20,3 +20,8 @@ Minecraft TwillightForestのマルチサーバーをEC2に立てた時の備忘�
 
 ## 作業内容
 WIP
+
+
+## LINK
+https://zenn.dev/suiteck/articles/f9e983ecb9d38d
+https://qiita.com/keys/items/264a64c2841875d51cdd
