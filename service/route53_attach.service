@@ -1,0 +1,14 @@
+[Unit]
+Description=Update Route 53 record on bootup/shutdown
+After=network.target
+
+[Service]
+Type=oneshot
+Environment="HOSTED_ZONE_ID=your_hosted_zone_id"
+Environment="DOMAIN_NAME=your_domain_name"
+ExecStart=/usr/bin/python3 /home/ec2-user/route53_attach.py
+ExecStop=/usr/bin/python3 /home/ec2-user/route53_attach.py delete
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
